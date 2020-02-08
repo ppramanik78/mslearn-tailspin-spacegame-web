@@ -52,7 +52,7 @@ steps:
     projects: '**/*.csproj'
 
 - task: Display@1
-  displayName: 'Display'
+  displayName: 'Display directory'
   inputs:
     command: 'echo'
     arguments: Build.ArtifactStagingDirectory
