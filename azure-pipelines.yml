@@ -51,11 +51,11 @@ steps:
     arguments: '--no-restore --configuration Release'
     projects: '**/*.csproj'
 
-- task: DotNetCoreCLI@2
-  displayName: 'Display directory'
-  inputs:
-    command: 'echo'
-    arguments: Build.ArtifactStagingDirectory
+#- task: DotNetCoreCLI@2
+#  displayName: 'Display directory'
+#  inputs:
+#    command: 'echo'
+#    arguments: Build.ArtifactStagingDirectory
 
 - task: DotNetCoreCLI@2
   displayName: 'Publish the project - Release'
