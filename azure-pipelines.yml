@@ -53,8 +53,9 @@ steps:
 
 - task: Display@1
   displayName: 'Display'
-  command: 'echo'
-  arguments: Build.ArtifactStagingDirectory
+  inputs:
+    command: 'echo'
+    arguments: Build.ArtifactStagingDirectory
 
 - task: DotNetCoreCLI@2
   displayName: 'Publish the project - Release'
